@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  background: #000;
+}
+
+.center .images {
+  width: 100%;
+  height: 100%;
+}
+
+.center .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* image stretch न हो */
+  display: none;
+  border-radius: 15px;
+}
+
+.center .images img:first-child {
+  display: block;
+}
+
+/* === Buttons Styling === */
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#btnleft {
+  left: 15px;
+}
+
+#btnright {
+  right: 15px;
+}
+
+.material-symbols-outlined {
+  font-size: 28px;
+}
